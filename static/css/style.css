@@ -25,6 +25,7 @@ body a{
 	-moz-transition:0.5s all;
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
+  text-decoration: underline;
 }
 
 .section-title {
@@ -205,8 +206,8 @@ ul a:focus {
   background: url("/static/images/orgs/housingchoicepartners.png") no-repeat center center/contain;
 }
 
-.orgs .orgs-box-gecdc {
-  background: url("/static/images/orgs/gecdc.png") no-repeat center center/contain;
+.orgs .orgs-box-operationhope {
+  background: url("/static/images/orgs/OH-logo-color.png") no-repeat center center/contain;
 }
 
 .photo .photo-box {
@@ -334,7 +335,7 @@ ul a:focus {
   background: url("/static/images/dsapp_logo.png") no-repeat center center/contain;
 }
 .partner .partner-box-5 {
-  background: url("/static/images/cie_logo.jpg") no-repeat center center/contain;
+  background: url("/static/images/accelerator.jpg") no-repeat center center/contain;
 }
 .partner .partner-box-6 {
   background: url("/static/images/capp_logo.jpg") no-repeat center center/contain;
