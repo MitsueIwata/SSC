@@ -210,6 +210,20 @@ ul a:focus {
   background: url("/static/images/orgs/OH-logo-color.png") no-repeat center center/contain;
 }
 
+.orgs .orgs-box-cic {
+  background: url("/static/images/orgs/CIC_logo_web.png") no-repeat center center/contain;
+}
+
+.orgs .orgs-box-ipl {
+  background: url("/static/images/orgs/ipl.jpg") no-repeat center center/contain;
+}
+
+.orgs .orgs-box-lucha {
+  background: url("/static/images/orgs/lucha.jpg") no-repeat center center/contain;
+}
+
+
+
 .photo .photo-box {
   display: block;
   opacity: 1;
