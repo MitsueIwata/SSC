@@ -1,4 +1,4 @@
-.swipebox-overflow-hidden {
+/* .swipebox-overflow-hidden {
   overflow: hidden!important;
 }
 
@@ -185,11 +185,12 @@
   100% {
     margin-left: 0px;
   }
-}
+} */
 
-/* Skin 
+/* Skin
 --------------------------*/
-#swipebox-overlay {
+
+/* #swipebox-overlay {
   background: rgba(13, 13, 13, 0.9);
 }
 
@@ -224,4 +225,4 @@
 	#swipebox-slider .slide img {
 		width: 65%;
 	}
-}
+} */

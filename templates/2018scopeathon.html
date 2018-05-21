@@ -1,0 +1,264 @@
+{% extends "layout.html" %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% block content %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Civic ScopeAthon</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../hackathon/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../hackathon/bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../hackathon/assets/css/main.css">
+</head>
+
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="#about">About</a></li>
+                    <li><a data-scroll href="#speakers">Keynote & Workshops</a></li>
+                    <li><a data-scroll href="#schedule">Schedule</a></li>
+                    <li><a data-scroll href="#orgs">Organizations</a></li>
+                    <li><a data-scroll href="#judges">Judges</a></li>
+                    <li><a data-scroll href="#location">Location</a></li>
+                    <li><a data-scroll href="#partner">Partners</a></li>
+                    <li><a data-scroll href="#faq">FAQ</a></li>
+
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center">
+        <div class="intro">
+            <h1>The Fourth Annual Civic Scopeathon</h1>
+            <a href="/"><img src="static/images/map_logo.jpg" class="img-responsive" alt=""></a>
+            <br>
+            <h3>Friday-Saturday, October 12-13, 2018</h3>
+            <h2>Ida Noyes Hall, University of Chicago</h2>
+            <!-- <h2> <a href="https://www.eventbrite.com/e/uchicago-third-annual-civic-scopeathon-tickets-37661686117" style='color:lightblue;'>RSVP here</a></h2> -->
+            <h3>Use Data. Solve Problems. Do good. #uchicivichack</h3>
+
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <h3 class="section-title">About the event</h3>
+                    <h4> Use Data. Solve Problems. Do good. </h4>
+                    <p>South Side Civic a <a href="https://capp-sites.uchicago.edu/" target="_blank" style="color:#87CAEB">CAPP</a>-student led group is partnering with UChicago’s Institute of Politics (IOP), Department of Computer Science, and the Harris School's CAPP program to host the Third Annual UChicago Civic ScopeAthon!</p>
+
+                    <p>While traditional hackathons are about writing code, a scopeathon focuses on understanding the purpose and use of technology in helping solve problems. Before anyone writes a line of code, it’s crucial to understand what a technology solution needs to accomplish. This understanding bridges developers and organization representatives, and the scopeathon strengthens this cross-discipline awareness.</p>
+
+                </div><!-- /.col-sm-6 -->
+
+                <div class="col-sm-6">
+
+                    <h3 class="section-title multiple-title">What is Our Goal?</h3>
+                    <h4>  The ScopeAthon Mission </h4>
+
+                     <p>The main objectives of the ScopeAthon are to form cross-functional teams to scope out problems faced by civic organizations, break the problems down into manageable parts and develop a plan to address them. The solutions may or may not be entirely tech-oriented, or only parts of the solution may have a tech component.</p>
+
+                    <p>The event brings together leaders of civic organizations, students, and community members to learn about civic hacking, civic problems, and how to work in teams to form a solution. Participants come from various backgrounds, including, but not limited to, computer science, political science and public policy, economics, geography, visual art, civic innovation and leadership, etc.</p>
+
+                    <ul class="list-arrow-right">
+
+                        <li>Learn and exercise problem-scoping skills</li>
+                        <li>Meet civic leaders in active organizations</li>
+                        <li>Work on real problems</li>
+                        <li>Contribute to the civic-tech community</li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<br>
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-title">FAQ</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Who can participate?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                  <p>The ScopeAthon is open to the entire University of Chicago community as well as interested community members working anywhere from the public/non-profit sector to the private sector.</p>
+
+                                  <p>Participants will come from various backgrounds, including, but not limited to, computer science, political science and public policy, economics, geography, visual art, and civic innovation and leadership.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> Do I need to know how to code?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                  <p>No. We want a diverse array of skills present at the scopeathon, which means that even if you can’t code, we want you there!
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"> Is there a competition? Are there prizes?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                  <p>Teams will present their work to a panel of expert judges and compete for prestige at the end of the day on Saturday. </p><p> The real prize for our civic scopeathon is the opportunity for teams to continue their work after the ScopeAthon. While there is no formal pipeline from the ScopeAthon to project completion. Representatives from the Community Action Bureau, the <a href="https://www.uchicagotechteam.com/" style="color:#87CAEB">Tech Team</a>, <a href="/" style="color:#87CAEB">South Side Civic</a>, and other affilitated institutions will be present at the ScopeAthon.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingExample">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> What’s this problem-scoping thing? Do you have an example?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseExample" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingExample">
+                                <div class="panel-body">
+                                  <p>Here’s an example of a civic problem and successful solution:</p>
+
+                                  <p>Problem/objective: A maternal health provider wants to optimize locations for birth-outcomes clinics given limited resources</p>
+                                  <p>Data: Birth outcomes data, census tract data</p>
+                                  <p>Improved Technique: Switching from analysis by county to analysis by census tract</p>
+                                  <p>Solution: Build a map by census tract that better illustrates the number and proportion of birth outcomes in a given area</p>
+
+                                  <br>
+
+                                  <p>Here are examples of the types of projects we won’t be working on:</p>
+                                  <p>Data exploration without a question/problem in mind (i.e. "Here’s all of our data, now tell us something!")</p>
+                                  <p>Building a website or app/making your website/app prettier</p>
+
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"> How do I join a team?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                <p>Register for a team when you sign up on <a href="https://www.eventbrite.com/e/uchicago-third-annual-civic-scopeathon-tickets-37661686117">Eventbrite</a>. Check out our website beforehand and find some problems you’re interested in working on! We will keep updating the website with organizations that will be at the scopeathon.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingEight">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight"> Do I need a laptop?</a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                <div class="panel-body">
+                                  <p>A laptop will be useful on Saturday. <!--If you can’t bring one on Saturday, contact us, <a href="mailto:chicagosouthsidecivic@gmail.com">ChicagoSouthSideCivic(at)gmail.com</a> and we will work something out.-->
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTen">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen"> Do I have to stay the whole time on Saturday? </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                                <div class="panel-body">
+                                  <p>Saturday’s workshops build upon one another to provide a “problem-scoping toolkit” by the end of the event. Coming for just the afternoon or just the morning will diminish your opportunity to fully engage in the scopeathon. So, email us if you have concerns about scheduling conflicts.
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingEleven">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven"> Who’s planning this and how can I get involved? </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                                <div class="panel-body">
+                                  <p>The Civic ScopeAthon is a joint effort with South Side Civic, a CAPP student-led group, UChicago’s Department of Computer Science, and the Harris School of Public Policy. </p>
+
+                                  <p>Contact <a href="mailto:chicagosouthsidecivic@gmail.com">ChicagoSouthSideCivic(at)gmail.com</a> to learn more, or volunteer at the event!
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+<br>
+
+    <!-- script -->
+    <script src="static/js/jquery/dist/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="static/js/main.js"></script>
+
+</div>
+
+</body>
+
+{% endblock %}
+
+</html>

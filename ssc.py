@@ -2,10 +2,10 @@ from flask import Flask, render_template, request
 from datetime import datetime
 try: #failing for Vi
 	from flaskext.markdown import Markdown
-except: 
-	# Ari tried this; it did not seem compatible with Flask objects 
+except:
+	# Ari tried this; it did not seem compatible with Flask objects
 	# He got the 'try' to work
-	from markdown import Markdown 
+	from markdown import Markdown
 import os
 
 app = Flask(__name__)
@@ -70,7 +70,7 @@ def scopeathon():
 	past.reverse()
 	#return render_template('hackathon.html', hack_flag = True)
 	#return render_template('2016hackathon.html', past=past, hack_flag = True)
-	return render_template('2017scopeathon.html', past=past, hack_flag = True)
+	return render_template('2018scopeathon.html', past=past, hack_flag = True)
 
 @app.route('/past_events')
 def past_events():
@@ -87,6 +87,9 @@ def contact():
 def error():
 	return render_template('404.html')
 
+@app.route('/participants')
+def participants():
+	return render_template('participants.html', participants_flag = True)
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0')
