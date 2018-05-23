@@ -9,35 +9,37 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <!DOCTYPE HTML>
 <html>
+
 {% block content %}
 
 <div class="events">
-<div class="events-main">
-    <h3>Past events</h3>
-<br>
-{% for event in past %}
-   <div class="row" style="padding:5px 0 0 20px">
-      <div class="col-sm-2">
-         {% if event.website %}
-         <strong><a href="{{ event.website }}" style="color:#87caeb">{{ event.title }}</a></strong>
-         {% else %}
-         <strong>{{ event.title }}</strong>
-         {% endif %}
+    <div class="events-main">
+        <h3>Past events</h3>
+        <br>
+        {% for event in past %}
+        <div class="row" style="padding:5px 0 0 20px">
 
-      </div>
-      <div class="col-sm-2">
-         {{ event.date }}
-      </div>
-      <div class="col-sm-8 about-bottom">
-         {% filter markdown %}
-         {{ event.description  }}
-         {% endfilter %}
+            <div class="col-sm-2">
+                {% if event.website %}
+                <strong><a href="{{ event.website }}" style="color:#87caeb">{{ event.title }}</a></strong>
+                {% else %}
+                <strong>{{ event.title }}</strong>
+                {% endif %}
+            </div>
 
-      </div>
-   </div>
-{% endfor %}
-</div>
-</div>
+            <div class="col-sm-2">
+             {{ event.date }}
+            </div>
+
+            <div class="col-sm-8 about-bottom">
+            {% filter markdown %}
+            {{ event.description  }}
+            {% endfilter %}
+            </div>
+
+        </div>
+    {% endfor %}
+    </div>
 </div>
 
 {% endblock %}

@@ -1,11 +1,6 @@
 from flask import Flask, render_template, request
 from datetime import datetime
-try: #failing for Vi
-	from flaskext.markdown import Markdown
-except:
-	# Ari tried this; it did not seem compatible with Flask objects
-	# He got the 'try' to work
-	from markdown import Markdown
+from flaskext.markdown import Markdown
 import os
 
 app = Flask(__name__)
@@ -35,7 +30,7 @@ def get_events_lists():
 			upcoming = sorted(upcoming, key=lambda event: event['filename'])
 			past = sorted(past, key=lambda event: event['filename'])
 		except:
-			print('%s does not match event file naming convention' % f)
+			print('{} does not match event file naming convention'.format(f))
 	return upcoming, past
 
 
@@ -58,7 +53,7 @@ def file_to_dict(filename):
 @app.route('/')
 def root():
 	upcoming, past = get_events_lists()
-	return render_template('index.html', upcoming=upcoming, home_flag = True)
+	return render_template('index.html', upcoming=upcoming, home_flag=True)
 
 @app.route('/about')
 def about():
@@ -68,20 +63,17 @@ def about():
 def scopeathon():
 	upcoming, past = get_events_lists()
 	past.reverse()
-	#return render_template('hackathon.html', hack_flag = True)
-	#return render_template('2016hackathon.html', past=past, hack_flag = True)
 	return render_template('2018scopeathon.html', past=past, hack_flag = True)
 
-@app.route('/past_events')
-def past_events():
+@app.route('/events_archive')
+def archive():
 	upcoming, past = get_events_lists()
 	past.reverse()
-	return render_template('past_events.html', past=past, event_flag = True)
+	return render_template('past_events.html', past=past)
 
 @app.route('/contact')
 def contact():
 	return render_template('contact.html', cont_flag = True)
-
 
 @app.route('/error')
 def error():
