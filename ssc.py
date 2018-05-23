@@ -69,7 +69,7 @@ def scopeathon():
 def archive():
 	upcoming, past = get_events_lists()
 	past.reverse()
-	return render_template('past_events.html', past=past)
+	return render_template('event_archive.html', past=past)
 
 @app.route('/contact')
 def contact():
