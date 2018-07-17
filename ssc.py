@@ -79,9 +79,13 @@ def contact():
 def error():
 	return render_template('404.html')
 
-@app.route('/sponsors')
+@app.route('/civic-leaders')
 def sponsors():
 	return render_template('sponsors.html')
+
+@app.route('/mentors')
+def mentors():
+	return render_template('mentors.html')
 
 @app.route('/participants')
 def participants():
