@@ -135,6 +135,13 @@ ul a:focus {
   justify-content: center;
 }
 
+.btn-middle {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 .btn-right {
   display: flex;
   align-items: center;
