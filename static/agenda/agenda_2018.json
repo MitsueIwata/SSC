@@ -1,0 +1,96 @@
+{
+  "day1": [
+    {
+        "start": "4:15 PM",
+        "end": "4:30 PM",
+        "name": "Check-In"
+    },
+    {
+      "start": "4:30 PM",
+      "end": "5:30 PM",
+      "name": "Workshop"
+    },
+    {
+      "start": "5:30 PM",
+      "end": "6:30 PM",
+      "name": "Keynote Speaker Address",
+      "description": "Presentation by Matt Pazoles, Chief Data Scientist at the Center for Government Excellence at Johns Hopkins University"
+    },
+    {
+      "start": "6:30 PM",
+      "end": "7:15 PM",
+      "name": "Meet the 2018 Scopeathon Community Organizations",
+      "description": "Introductions by Organization Leaders"
+    },
+    {
+      "start": "7:15 PM",
+      "end": "8:00 PM",
+      "name": "Networking Reception"
+    }
+  ],
+  "day2": [
+    {
+        "start": "9:00 AM",
+        "end": "9:30 AM",
+        "name": "Check-In & Breakfast"
+    },
+    {
+        "start": "9:30 AM",
+        "end": "10:00 AM",
+        "name": "Welcome & Team Breakout for Introductions"
+    },
+    {
+        "start": "10:00 AM",
+        "end": "11:00 AM",
+        "name": "Workshop"
+    },
+    {
+        "start": "11:00 AM",
+        "end": "12:30 PM",
+        "name": "Team Breakout: Scope the Problem",
+        "description": "Mentors will be circulating the room"
+    },
+    {
+      "start": "12:30 PM",
+      "end": "1:30 PM",
+      "name": "Lunch"
+    },
+    {
+      "start": "1:30 PM",
+      "end": "2:00 PM",
+      "name": "Workshop"
+    },
+    {
+      "start": "2:00 PM",
+      "end": "3:30 PM",
+      "name": "Team Breakout: Prepare Outline of Proposal",
+      "description": "Mentors will be circulating the room"
+    },
+    {
+      "start": "3:30 PM",
+      "end": "4:00 PM",
+      "name": "Explore the Room for Ideas & Restroom Break"
+    },
+    {
+      "start": "4:00 PM",
+      "end": "5:00 PM",
+      "name": "Team Breakout: Finalize Presentations",
+      "description": "Mentors will be circulating the room"
+    },
+    {
+      "start": "5:00 PM",
+      "end": "6:00 PM",
+      "name": "Final Presentations"
+    },
+    {
+      "start": "6:00 PM",
+      "end": "7:00 PM",
+      "name": "Dinner as Judges Deliberate"
+    },
+    {
+      "start": "7:00 PM",
+      "end": "8:00 PM",
+      "name": "Awards & Thank You Reception"
+    }
+  ]
+}
