@@ -28,6 +28,14 @@ body a{
   text-decoration: underline;
 }
 
+hr {
+  height: 1px;
+  width:100%;
+  background-color: #dddddd;
+  display:block; /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+}
 .section-title {
     color: #313131;
     letter-spacing: 1px;

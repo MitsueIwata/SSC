@@ -1,0 +1,32 @@
+.agenda-day {
+  padding: 50px;
+  padding-top: 100px;
+}
+
+.agenda-item {
+  border-left: solid 2px rgba(150, 150, 150, 0.2);
+  position: relative;
+  padding-bottom: 75px;
+}
+
+.agenda-item > img {
+  position: absolute;
+  top: -10px;
+  left: -12px;
+}
+
+.agenda-item > div {
+  position: relative;
+  left: 40px;
+  top: -40px;
+}
+
+.agenda-date > img {
+  position: absolute;
+}
+
+.agenda-date > h1 {
+  position: relative;
+  top: 90px;
+  left: 20px;
+}

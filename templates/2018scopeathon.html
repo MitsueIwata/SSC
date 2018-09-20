@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../hackathon/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../hackathon/bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="../hackathon/assets/css/main.css">
+    <link rel="stylesheet" href="static/css/agenda.css">
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -90,8 +91,17 @@
         </div>
     </section>
 
+    <hr />
+    <section id="schedule" class="section schedule">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                {% include 'schedule.html' %}
+            </div>
+        </div>
+    </section>
 
-<br>
+    <hr />
     <section id="faq" class="section faq">
         <div class="container">
             <div class="row">
@@ -247,7 +257,6 @@
                 </div>
             </div>
     </section>
-<br>
 
     <!-- script -->
     <script src="static/js/jquery/dist/jquery.min.js"></script>
