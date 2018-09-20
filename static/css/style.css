@@ -16,7 +16,7 @@ ul li {
   margin-bottom: 10px;
 }
 html,body{
-    font-family: 'Fira Sans', sans-serif;
+    /* font-family: 'Fira Sans', sans-serif; */
 	/* font-family: 'Open Sans', sans-serif; */
 }
 body a{
@@ -44,6 +44,7 @@ body a{
   margin: 1.69em 0;
 }
 .head-nav ul{
+    font-family: 'Montserrat', sans-serif;
 	margin:0;
 	padding:0;
 }
@@ -94,7 +95,7 @@ body a{
 }
 ul a:hover,
 ul a:focus {
-	outline: none;
+    outline: none;
 	color: ;
 	text-decoration: none;
 }
@@ -105,7 +106,8 @@ ul a:focus {
 }
 
 .py-200 {
-    padding: 50px 0px 250px 0px !important;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 0px 50px 0px !important;
 }
 .my-200 {
     margin: 200px 0px 200px 0px !important;
@@ -115,6 +117,7 @@ ul a:focus {
   display: flex;
   justify-content: center;
 }
+
 
 .btn-lg {
   padding: 10% 20% 10% 20%;

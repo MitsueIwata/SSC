@@ -1,59 +1,10 @@
-
+{% extends "layout.html" %}
 <!DOCTYPE html>
 
 
-<html lang="en">
-<head>
-  <link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-  <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="South Side Civic web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-  Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-  <script src="static/js/jquery.min.js"></script>
-</head>
 
+{% block content %}
 <body>
-
-<!-- header -->
-  <div class="header-top">
-  </div>
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-            <img src="static/images/southsidecivic_logo_foot.png" class="img-responsive" alt="">
-          <!-- <a href="/"><img src="static/images/map_logo.jpg" class="img-responsive" alt=""></a> -->
-        </div>
-          <div class="head-nav">
-            <span class="menu"> </span>
-              <ul class="cl-effect-16">
-                <li><a href="/" data-hover="HOME">home</a></li>
-                <li><a href="/about" data-hover="ABOUT US">about us</a></li>
-                <li><a href="/scopeathon" data-hover="CIVIC SCOPEATHON">civic scopeathon</a></li>
-                <li><a href="/events_archive" data-hover="EVENTS">events</a></li>
-                <li><a href="/contact" data-hover="CONTACT US">contact us</a></li>
-                  <div class="clearfix"> </div>
-              </ul>
-                <!-- script-for-nav -->
-              <script>
-                $( "span.menu" ).click(function() {
-                  $( ".head-nav ul" ).slideToggle(300, function() {
-                  // Animation complete.
-                  });
-                });
-              </script>
-            <!-- script-for-nav -->
-          </div>
-          <div class="clearfix"> </div>
-    </div>
-  <!-- header -->
-
-
-
 
 
 <div class="events">
@@ -436,36 +387,7 @@ http://derekeder.com/" style="color:#87caeb">Derek Eder</a></strong>
 
 
 
-
-
-<!-- footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="foot-left">
-        <div class="foot-nav">
-          <ul>
-            <li><a href="/" data-hover="HOME">home</a></li>
-                <li><a href="/about" data-hover="ABOUT US">about us</a></li>
-                <li><a href="/scopeathon" data-hover="CIVIC SCOPEATHON">civic scopeathon</a></li>
-                <li><a href="/past_events" data-hover="EVENTS">events</a></li>
-                <li><a href="/contact" data-hover="CONTACT US">contact us</a></li>
-              <div class="clearfix"> </div>
-          </ul>
-        </div>
-        <p>Copyrights © 2015 South Side Civic All rights reserved | Template adapted from <a href="http://w3layouts.com/">&nbsp; W3layouts</a></p>
-      </div>
-      <div class="foot-right">
-        <a href="/about"><img src="static/images/southsidecivic_logo_foot.png" class="img-responsive" alt=""></a>
-                  <p><a href="https://twitter.com/SouthSideCivic"><i class="twt"></i></a></p>
-
-      </div>
-      <div class="clearfix"> </div>
-    </div>
-  </div>
-<!-- footer -->
-
-
 </body>
-
+{% endblock %}
 
 </html>
