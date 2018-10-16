@@ -1,0 +1,17 @@
+{
+    "judges": [
+      {
+        "name": "Michelangelo D'Agostino",
+        "bio": "Michelangelo D’Agostino is the senior director of data science at ShopRunner, leading a team that leverages e-commerce data from a network of over 140 retailers to build personalization products for ShopRunner's 6 million members. Prior to ShopRunner, he led the data science R&D team at Civis Analytics, a Chicago-based data science consulting and software startup that helps companies and nonprofits better utilize their data. Michelangelo was a senior analyst in digital analytics with the 2012 Obama re-election campaign, where he helped to optimize the campaign’s email fundraising juggernaut and analyzed social media data. He's also been a mentor with the Data Science for Social Good Fellowship. Michelangelo holds a PhD in particle astrophysics from UC Berkeley and got his start in analytics sifting through neutrino data from the IceCube experiment. He’s also written about science and technology for the Economist."
+      },
+      {
+        "name": "Danielle DuMerer",
+        "bio": "Danielle DuMerer is CIO and Commissioner of the City of Chicago’s Department of Innovation and Technology, where she is working to improve how residents interact with government by creating more responsive and accessible digital services. Danielle brings over ten years experience in government tech, having served as the City’s CTO and leading data, digital inclusion, and other strategic initiatives. In 2016, Danielle and her team were recognized by the Chicago chapters of SIM and AITP as the Most Effective IT Team in a large company. Prior to joining government, Danielle developed educational technology products at the McGraw-Hill Companies. She also worked in the Library and Archives field—serving educational and non-profit organizations to promote equitable access to and preservation of information resources. Danielle holds a Master of Library and Information Science degree from the University of Maryland, College Park and a Bachelor of Arts from the University of Illinois, Urbana-Champaign."
+      },
+      {
+        "name": "Diana Petty",
+        "bio": "Diana Petty is the Assistant Director of the Mansueto Institute for Urban Innovation  is a project- and program-manager by trade and has spent her career helping mission-driven organizations operate more effectively to increase impact in their communities. She brings nearly a decade of experience working in municipal government and public-sector consulting, particularly on cross-sector, cross-functional partnerships. Prior to joining the Mansueto Institute, Diana worked as a senior consultant at Public Works Partners, helping government and nonprofit clients conceptualize new programs, secure stakeholder buy-in for organizational change, and implement program enhancements. She also spent several years working for the City of New York in communications, strategic planning, and relationship management positions at both the Mayor’s Fund to Advance New York City and NYC Dept of Information Technology & Telecommunications. Diana received her Bachelor of Arts in Political Science and Media Studies from Macalester College. She is a graduate of the New York Urban Fellows Program, NYU Wagner’s Fellowship for Emerging Leaders in Public Service, and the StartingBloc Fellowship for Change Leaders."
+      }
+    ]
+  }
+  

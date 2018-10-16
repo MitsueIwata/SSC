@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% block content %}
+
+
+<h3 class="section-title">Planning a Scopeathon?<br><i>A List of Scoping Resources</i></h3>
+    <div class="agenda-day">
+      {% for r in resources["resources"] %}
+        <div class="resource">
+          <div>
+            <!-- <p style="font-size: 24px;">
+              <strong>{{r.title}}</strong> -->
+            <!-- </p> -->
+            <h3 class="resource-title">{{r.title}}</h3>
+            <p class="resource-description">
+              <ul>
+                <li>{{r.description}}</li>
+                <li>When to use: {{r.use}}</li>
+                <li><a href={{r.link}}>View Resource>></a></li>
+              </ul>
+              <br><br>
+            </p>
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
+</html>

@@ -1,0 +1,28 @@
+{
+    "resources": [
+      {
+        "title": "Sunlight Foundation - A Guide to Tactical Data Engagement",
+        "description": "This guide is designed to help city leaders and residents collaborate on increasing the social impact of open government data.",
+        "link": "https://sunlightfoundation.com/2017/09/19/introducing-a-guide-to-tactical-data-engagement/",
+        "use": "At the ideation stage, to formulate a roadmap for the scoping process. During the initial scoping conversations, to verify if all the required stakeholders have been selected"
+      },
+      {
+        "title": "Center for Data Science and Public Policy -  Data Science Project Scoping Guide",
+        "description": "Motivated by the need to bridge the gap between organizations doing work that has social impact and data science experts who have the technical expertise to tackle those problems, this guide and the scoping worksheet and sample attached illustrate how to formulate a problem that is both solvable and impactful.",
+        "link": "https://dsapp.uchicago.edu/home/resources/data-science-project-scoping-guide/",
+        "use": "At the ideation stage to formulate a roadmap for the scoping process"
+      },
+      {
+        "title": "Harvard Business Review: Are You Solving the Right Problem?",
+        "description": "This article outlines a problem-definition process that arrives at a final problem statement through scoping a solution in terms of the executor’s desired outcome in the context of the executor’s existing strategies and constraints as well as stakeholders involved.",
+        "link": "https://hbr.org/2012/09/are-you-solving-the-right-problem",
+        "use": "During the initial scoping conversations, when narrowing down the problem statement to solve"
+      },
+      {
+        "title": "Building Technologies With, Not For Communities: An Engagement Guide for Civic Tech",
+        "description": "This guide elaborates on a “people first” approach to developing technologies with, not for people you are trying to serve, emphasizing “two-way educational environments.” ",
+        "link": "http://www.smartchicagocollaborative.org/wp-content/uploads/2015/10/experimental-modes.pdf",
+        "use": "During the later parts of the scoping conversations, when deciding the project execution model"
+           }
+    ]
+  }

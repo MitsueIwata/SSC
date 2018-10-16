@@ -50,6 +50,17 @@ def get_scopeathon_schedule():
     return events
 
 
+@app.route('/resources')
+def resources():
+    resources = get_scoping_resources()
+    return render_template('resources.html', resources=resources, hack_flag=True)
+
+
+def get_scoping_resources():
+    with open('static/scoping_resources/resources.json') as file:
+        resources = json.load(file)
+    return resources
+
 # makes event.txt into dictionary
 def file_to_dict(filename):
     file_dict = {}
