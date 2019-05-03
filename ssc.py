@@ -9,31 +9,32 @@ app.config['DEBUG'] = True
 
 Markdown(app)
 
-PATH = 'static/events'
-
 # creates list of upcoming and past events
-
-
 def get_events_lists():
     upcoming = []
     past = []
     present = datetime.now().date()
-
-    for f in os.listdir(PATH):
+    path = './static/events'
+    for f in os.listdir(path):
         try:
-            year, mon, day = int(f[0:4]), int(f[5:7]), int(f[8:10])
-            if datetime.date(datetime(year, mon, day)) < present:
-                event_dict = file_to_dict(f)
+            fn = f.split('.')[0]
+            year, month, day = [int(d) for d in fn.split('_')]
+        except:
+            print('{} does not match event file naming convention'.format(f))
+        try:        
+            if datetime.date(datetime(year, month, day)) < present:
+                event_dict = file_to_dict(os.path.join(path, f))
                 event_dict['filename'] = f
                 past.append(event_dict)
             else:
-                event_dict = file_to_dict(f)
+                event_dict = file_to_dict(os.path.join(path, f))
                 event_dict['filename'] = f
                 upcoming.append(event_dict)
-            upcoming = sorted(upcoming, key=lambda event: event['filename'])
-            past = sorted(past, key=lambda event: event['filename'])
-        except:
-            print('{} does not match event file naming convention'.format(f))
+        except Exception as e:
+            print(e)
+        upcoming = sorted(upcoming, key=lambda event: event['filename'])
+        past = sorted(past, key=lambda event: event['filename'])
+
     return upcoming, past
 
 
@@ -52,8 +53,10 @@ def get_scopeathon_schedule():
 
 @app.route('/resources')
 def resources():
+    with open('static/scoping_resources/media.json') as file:
+        articles = json.load(file)
     resources = get_scoping_resources()
-    return render_template('resources.html', resources=resources, hack_flag=True)
+    return render_template('resources.html', media=articles, resources=resources, hack_flag=True)
 
 
 def get_scoping_resources():
@@ -64,7 +67,7 @@ def get_scoping_resources():
 # makes event.txt into dictionary
 def file_to_dict(filename):
     file_dict = {}
-    with open(os.path.join(PATH, filename)) as f:
+    with open(filename) as f:
         content = f.read().split('|')
         if len(content) < 4:
             file_dict['title'] = content[0]
@@ -88,7 +91,6 @@ def root():
 def about():
     return render_template('about.html', about_flag=True)
 
-
 @app.route('/scopeathon')
 def scopeathon():
     _, past = get_events_lists()
@@ -96,17 +98,15 @@ def scopeathon():
     past.reverse()
     return render_template('2018scopeathon.html', events=events, past=past, hack_flag=True)
 
-@app.route('/archive')
-def archive_v2():
+@app.route('/archive_test')
+def archive_test():
     _, past = get_events_lists()
     past.reverse()
     return render_template('past_events.html', past=past)
 
 @app.route('/events_archive')
 def archive():
-    _, past = get_events_lists()
-    past.reverse()
-    return render_template('event_archive.html', past=past)
+    return render_template('event_archive.html')
 
 
 @app.route('/contact')
