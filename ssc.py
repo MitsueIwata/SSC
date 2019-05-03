@@ -96,6 +96,11 @@ def scopeathon():
     past.reverse()
     return render_template('2018scopeathon.html', events=events, past=past, hack_flag=True)
 
+@app.route('/archive')
+def archive_v2():
+    _, past = get_events_lists()
+    past.reverse()
+    return render_template('past_events.html', past=past)
 
 @app.route('/events_archive')
 def archive():
