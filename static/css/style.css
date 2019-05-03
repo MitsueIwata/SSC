@@ -39,7 +39,7 @@ hr {
 .section-title {
     color: #313131;
     letter-spacing: 1px;
-    margin: 0px 0px 60px;
+    margin: 0px 0px 30px;
     text-transform: uppercase;
     text-align: left;
     font-weight: 700;
@@ -638,7 +638,7 @@ i.arw {
   padding: 2em 0;
 }
 i.twt{
-width: 32px;
+  width: 32px;
   height: 32px;
   background: url("/static/images/img-sprite.png")no-repeat -49px -44px;
   display: inline-block;
@@ -647,9 +647,9 @@ i.twt:hover {
   background: url("/static/images/img-sprite.png")no-repeat -48px -4px ;
 }
 i.fb{
- width: 32px;
+  width: 32px;
   height: 32px;
- background: url(../images/img-sprite.png)no-repeat -6px -44px;
+  background: url(../images/img-sprite.png)no-repeat -6px -44px;
   display: inline-block;
 }
 i.fb:hover{
